@@ -32,11 +32,6 @@ function applySite() {
   document.querySelectorAll('[data-fill="serviceArea"]').forEach((el) => {
     el.textContent = SITE.serviceArea;
   });
-
-  const hint = document.querySelector(".form-hint");
-  if (hint && SITE.email) {
-    hint.textContent = `This sends your note to ${SITE.email}.`;
-  }
 }
 
 applySite();
@@ -266,7 +261,7 @@ function showSuccess(text, mode) {
   success.hidden = false;
   successText.value = text;
   if (mode === "sent") {
-    successLead.textContent = `Thanks. Your note is on its way to ${SITE.email}.`;
+    successLead.textContent = "I read every note myself. Please check your inbox for my response, and be sure to check your Spam or Promotions folder just in case your email provider filters our initial message!";
   } else if (mode === "mailto" && SITE.email) {
     successLead.textContent = `If your email app opened, send the message waiting there. You can also copy it and email ${SITE.email}.`;
   } else {

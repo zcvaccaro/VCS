@@ -745,23 +745,9 @@ a {
   color: var(--gold);
 }
 
-.process-heading {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem 1.15rem;
+.process h2 {
+  max-width: 16ch;
   margin-bottom: 1.5rem;
-}
-
-.process-heading h2 {
-  max-width: 14ch;
-  margin: 0;
-}
-
-.process-seal {
-  height: 5.4rem;
-  width: auto;
-  margin: 0;
-  flex: 0 0 auto;
 }
 
 .steps {

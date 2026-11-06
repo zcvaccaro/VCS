@@ -3,6 +3,6 @@
 window.SITE = {
   phoneDisplay: "", // example: "(845) 555-0142"
   phoneTel: "", // example: "+18455550142"
-  email: "vaccaroconstructionservices@gmail.com", // switch to zack@vaccarocs.com when Workspace is ready
+  email: "zack@vaccarocs.com",
   serviceArea: "", // example: "Hudson Valley, NY"
 };
