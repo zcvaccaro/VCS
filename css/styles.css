@@ -393,9 +393,23 @@ a {
   margin-bottom: 1.6rem;
 }
 
-.work-head .lede {
+.work-lede {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 1.35rem;
   margin-top: 0.35rem;
-  max-width: 36rem;
+}
+
+.work-lede .lede {
+  max-width: none;
+}
+
+.work-hint {
+  margin: 0;
+  color: var(--sage-deep);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .story {
@@ -662,6 +676,8 @@ a {
 
 .about-mark {
   align-self: start;
+  width: min(280px, 100%);
+  text-align: center;
 }
 
 .service-list {
@@ -699,10 +715,23 @@ a {
 }
 
 .about-mark img {
-  width: min(280px, 70%);
+  width: min(280px, 100%);
   height: auto;
   display: block;
+  margin-inline: auto;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 981px) {
+  .about-mark {
+    width: 20rem;
+    max-width: 100%;
+    justify-self: start;
+  }
+
+  .about-mark p {
+    white-space: nowrap;
+  }
 }
 
 .about-mark p {
@@ -1120,6 +1149,18 @@ textarea:focus {
     position: static;
   }
 
+  #services {
+    padding-bottom: 0;
+  }
+
+  #about {
+    padding-top: clamp(1.5rem, 4vw, 4rem);
+  }
+
+  .about-mark {
+    margin-inline: auto;
+  }
+
   .steps {
     grid-template-columns: 1fr 1fr;
   }
@@ -1205,12 +1246,7 @@ textarea:focus {
     width: 78px;
   }
 
-  .about-mark {
-    text-align: center;
-  }
-
   .about-mark img {
-    margin-inline: auto;
     margin-bottom: 0.3rem;
   }
 
