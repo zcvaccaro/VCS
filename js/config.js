@@ -4,5 +4,5 @@ window.SITE = {
   phoneDisplay: "", // example: "(845) 555-0142"
   phoneTel: "", // example: "+18455550142"
   email: "zack@vaccarocs.com",
-  serviceArea: "", // example: "Hudson Valley, NY"
+  serviceArea: "Ulster County and nearby",
 };
